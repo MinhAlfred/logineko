@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { useAuth } from "@/contexts/AuthContext"
 import { 
   Menu, 
@@ -13,8 +12,7 @@ import {
   Settings, 
   LogOut,
   BarChart3,
-  Package,
-  FileText
+  Package
 } from "lucide-react"
 import Link from "next/link"
 import { useRouter, usePathname } from "next/navigation"
@@ -40,7 +38,6 @@ export function AdminLayout({ children }: AdminLayoutProps) {
     { name: 'Products', href: '/admin/products', icon: Package },
     { name: 'Orders', href: '/admin/orders', icon: ShoppingBag },
     { name: 'Reviews', href: '/admin/reviews', icon: MessageSquare },
-    { name: 'Content', href: '/admin/content', icon: FileText },
     { name: 'Settings', href: '/admin/settings', icon: Settings },
   ]
 

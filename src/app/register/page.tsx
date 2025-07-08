@@ -65,7 +65,7 @@ export default function RegisterPage() {
             </div>
             <div>
               <CardTitle className="text-2xl font-bold text-gray-800">
-                Join Neko's Family!
+                Join Neko&apos;s Family!
               </CardTitle>
               <CardDescription className="text-gray-600 mt-2">
                 Create your account and start learning with Neko

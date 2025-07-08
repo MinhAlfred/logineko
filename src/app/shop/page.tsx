@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Footer } from "@/components/footer"
-import { ShoppingCart, Star, Download, BookOpen, FileText, Crown } from "lucide-react"
-import { useState } from "react"
+import { ShoppingCart, Star, Download, BookOpen, Crown } from "lucide-react"
 import { useCart } from "@/contexts/CartContext"
 
 const products = [
@@ -106,9 +105,9 @@ export default function ShopPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4">
-            <h1 className="text-5xl font-bold text-gradient">Neko's Learning Treasure Shop 🐱</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover amazing educational materials, worksheets, and resources to enhance your child's learning adventure with Neko
+            <h1 className="text-5xl font-bold text-gradient">Neko&apos;s Learning Treasure Shop 🐱</h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          Discover amazing educational materials, worksheets, and resources to enhance your child&apos;s learning adventure with Neko
             </p>
           </div>
         </div>

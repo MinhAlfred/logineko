@@ -104,7 +104,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         try {
           const user = JSON.parse(savedUser)
           dispatch({ type: 'LOGIN_SUCCESS', payload: user })
-        } catch (error) {
+        } catch {
           localStorage.removeItem('logineko_user')
           dispatch({ type: 'SET_LOADING', payload: false })
         }
@@ -125,7 +125,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const user = mockUsers.find(u => u.email === email && u.password === password)
     
     if (user) {
-      const { password: _, ...userWithoutPassword } = user
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { password, ...userWithoutPassword } = user
       localStorage.setItem('logineko_user', JSON.stringify(userWithoutPassword))
       dispatch({ type: 'LOGIN_SUCCESS', payload: userWithoutPassword })
       return true
